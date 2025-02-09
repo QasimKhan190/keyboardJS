@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+        .keyboard {
+            display: grid;
+            grid-template-columns: repeat(10, 50px);
+            gap: 10px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-right: 100px;
+        }
+        .key {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ddd;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+            border: none;
+        }
+        .key:hover {
+            background: #bbb;
+        }
+#in {
+    border: 1px solid white;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 190px;
+    left:46%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+h1{
+            display: inline-block;
+            margin-top: 2px;
+            color: white;
+            margin-left: 100px;
+ }
+
+    </style>
+</head>
+<body>
+    <div id="in">
+        <h1 id="h1">..</h1>
+    </div>
+    
+
+
+    <div class="keyboard">
+        <button onclick="q()" class="key">Q</button>
+        <button onclick="w()" class="key">W</button>
+        <button onclick="e()" class="key">E</button> 
+        <button onclick="r()" class="key">R</button>
+        <button onclick="t()" class="key">T</button>
+        <button onclick="y()" class="key">Y</button>
+        <button onclick="u()" class="key">U</button>
+        <button onclick="i()" class="key">I</button>
+        <button onclick="o()" class="key">O</button>
+        <button onclick="p()" class="key">P</button>
+        <button onclick="a()" class="key">A</button>
+        <button onclick="s()" class="key">S</button>
+        <button onclick="df()" class="key">D</button>
+        <button onclick="f()" class="key">F</button>
+        <button onclick="g()" class="key">G</button>
+        <button onclick="hf()" class="key">H</button>
+        <button onclick="j()" class="key">J</button>
+        <button onclick="k()" class="key">K</button>
+        <button onclick="l()" class="key">L</button>
+        <button onclick="z()" class="key">Z</button>
+        <button onclick="x()" class="key">X</button>
+        <button onclick="c()" class="key">C</button>
+        <button onclick="v()" class="key">V</button>
+        <button onclick="b()" class="key">B</button>
+        <button onclick="n()" class="key">N</button>
+        <button onclick="m()" class="key">M</button>
+    </div>
+
+   
+</body>
+<script src="script.js"></script>
+</html>
